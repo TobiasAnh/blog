@@ -1,8 +1,14 @@
-{% extends "base.html" %}
+{% extends "base.html" %} <!-- ineherit basic html template -->
 
 {% block content %}
 <h1>New post</h1>
-<form action="" method="post">{% csrf_token %}
+
+<!-- 
+post method is used because data is sent 
+csrf_token is a django build-in protection for cross-site forgery
+form.as_p is to output the data 
+-->
+<form action="" method="post">{% csrf_token %} 
       {{ form.as_p }}
       <input type = "submit" value="Save">
 </form>

@@ -1,7 +1,7 @@
 from django.db import models
 from django.urls import reverse
 
-
+# Data base model (title, author, etc. are named "fields")
 class Post(models.Model):
     title = models.CharField(max_length=200)
     author = models.ForeignKey(
