@@ -12,7 +12,6 @@ Classes invoked within urls.py to dynamically create, delete or update
 blog posts. When called, corresponding templates are generated (*.html)
 and blogs are stored in database using a model "Post". 
 
-
 """
 
 
